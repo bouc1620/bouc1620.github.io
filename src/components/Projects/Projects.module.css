@@ -1,0 +1,135 @@
+.title {
+  color: var(--red-tint1);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.3rem;
+  border-left: 0.35rem solid var(--red-tint1);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  color: var(--yellow-tint1);
+}
+
+.links {
+  display: flex;
+  gap: 1em;
+}
+
+.body h2 {
+  color: var(--red-tint1);
+  margin: 0;
+}
+
+.description {
+  padding: 0.5em 0;
+}
+
+.keywords {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+
+  display: flex;
+  gap: 1em;
+}
+
+.keywords > li {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.hr {
+  border: none;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0;
+}
+
+.star,
+.github,
+.link {
+  font-size: 1.4rem;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.arrow {
+  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  line-height: 2rem;
+  width: fit-content;
+}
+
+.icon-before {
+  padding-right: 0.75ch;
+}
+
+.icon-after {
+  padding-left: 1ch;
+}
+
+.button.source {
+  background-color: var(--purple-tint1);
+  border: 1px solid var(--purple-tint2);
+  border-radius: 0.3rem;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0.5rem 1.25rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button.source:hover {
+  background-color: color-mix(in srgb, var(--purple-tint1) 96%, white);
+  border: 1px solid color-mix(in srgb, var(--purple-tint2) 96%, white);
+}
+
+.button.webpage {
+  background-color: var(--orange-tint1);
+  border: 1px solid var(--orange-tint2);
+  border-radius: 0.3rem;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0.5rem 1.25rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button.webpage:hover {
+  background-color: color-mix(in srgb, var(--orange-tint1) 96%, white);
+  border: 1px solid color-mix(in srgb, var(--orange-tint2) 96%, white);
+}
