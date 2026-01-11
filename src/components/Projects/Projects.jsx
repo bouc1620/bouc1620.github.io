@@ -44,7 +44,7 @@ const Projects = () => {
                 ''
               ) : (
                 <ul class={styles.keywords}>
-                  {getKeywords(project).map((keyword) => (
+                  {getKeywords(project, locale).map((keyword) => (
                     <li>{keyword}</li>
                   ))}
                 </ul>
