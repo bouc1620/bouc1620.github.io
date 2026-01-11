@@ -10,7 +10,6 @@
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.06);
   color: inherit;
-  cursor: pointer;
   padding: 0.5rem 0;
   width: 7ch;
 }
@@ -35,4 +34,8 @@
 
 .choice-right.active {
   box-shadow: 1px 0 0 0 rgba(255, 255, 255, 0.06) inset;
+}
+
+.choice:not(.active) {
+  cursor: pointer;
 }
