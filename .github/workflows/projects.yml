@@ -1,4 +1,4 @@
-name: Portfolio
+name: Projects
 
 on:
   workflow_dispatch: {}
@@ -83,17 +83,3 @@ jobs:
             }
 
             fs.writeFileSync("src/i18n/projects.json", JSON.stringify(projects, null, 2));
-
-      - name: Commit projects.json if changed
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: 'Update projects.json'
-          branch: main
-          commit_user_name: 'GitHub Actions'
-          commit_user_email: 'actions@github.com'
-
-      - name: Build site
-        run: npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
