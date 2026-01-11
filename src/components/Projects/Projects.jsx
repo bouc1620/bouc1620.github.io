@@ -3,6 +3,12 @@ import projects from '../../i18n/projects.json';
 import { useContext } from 'solid-js';
 import { LanguageContext } from '../LanguageProvider/LanguageProvider';
 
+const getDescription = (project, locale) =>
+  locale() === 'fr' ? project.description.fr : project.description.en;
+
+const getKeywords = (project, locale) =>
+  locale() === 'fr' ? project.keywords.fr : project.keywords.en;
+
 const Projects = () => {
   const { locale, translations } = useContext(LanguageContext);
 
@@ -32,15 +38,13 @@ const Projects = () => {
                 ''
               )}
               <div class={styles.description}>
-                {locale() === 'fr'
-                  ? project.description.fr
-                  : project.description.en}
+                {getDescription(project, locale)}
               </div>
-              {project.keywords.length === 0 ? (
+              {getKeywords(project, locale) === 0 ? (
                 ''
               ) : (
                 <ul class={styles.keywords}>
-                  {project.keywords.map((keyword) => (
+                  {getKeywords(project).map((keyword) => (
                     <li>{keyword}</li>
                   ))}
                 </ul>
