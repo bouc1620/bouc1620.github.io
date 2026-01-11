@@ -54,6 +54,14 @@ jobs:
               .map(e => e.node)
               .filter(repo => repo.repositoryTopics.nodes.some(t => t.topic.name === "portfolio"));
 
+            const otherPortfolioRepos = (await github.paginate(
+              github.rest.repos.listForUser,
+              { username: 'bouc1620', per_page: 100 }
+            )).filter((repo) => {
+              return !pinnedRepos.some((pinned) => pinned.name === repo.name) &&
+                repo.topics.includes('portfolio');
+            });
+
             const getRepoMetadata = async (repo) => {
               try {
                 const file = await github.rest.repos.getContent({
@@ -73,7 +81,7 @@ jobs:
             };
 
             const projects = [];
-            for (const repo of pinnedRepos) {
+            for (const repo of [...pinnedRepos, ...otherPortfolioRepos]) {
               projects.push({
                 name: repo.name,
                 url: repo.url,
