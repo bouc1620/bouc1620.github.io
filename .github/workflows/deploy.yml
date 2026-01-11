@@ -1,8 +1,9 @@
 name: Deploy to GitHub Pages
 
 on:
+  workflow_dispatch: {}
   workflow_run:
-    workflows: ['Portfolio']
+    workflows: ['Projects']
     types:
       - completed
 
@@ -13,6 +14,7 @@ permissions:
 
 jobs:
   build:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
