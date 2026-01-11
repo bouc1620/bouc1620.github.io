@@ -1,31 +1,43 @@
 [
   {
     "name": "gamepad-rxjs",
-    "url": "https://www.github.com/bouc1620/gamepad-rxjs",
-    "webpage": "https://www.npmjs.com/package/gamepad-rxjs",
+    "url": "https://github.com/bouc1620/gamepad-rxjs",
     "stars": 1,
     "description": {
       "fr": "Ce package encapsule le Gamepad API et expose toutes les entrées comme des Observables RxJS. Il convient aux configurations multi-joueurs, permettant de gérer de manière réactive les changements d’état et de répondre aux entrées discrètes et continues.",
-      "en": "This library wraps the Gamepad API and exposes all inputs as RxJS Observables. It is suitable for multi-player setups, allowing developers to reactively handle changes in state and respond to both discrete and continuous inputs."
+      "en": "This package wraps the Gamepad API and exposes all inputs as RxJS Observables. It is suitable for multi-player setups, allowing developers to reactively handle changes in state and respond to both discrete and continuous inputs."
     },
-    "keywords": ["RxJS", "Gamepad API", "TypeScript", "npm package"],
-    "languages": ["TypeScript"]
+    "keywords": [
+      "RxJS",
+      "Gamepad API",
+      "TypeScript",
+      "npm package"
+    ],
+    "languages": [
+      "TypeScript"
+    ]
   },
   {
     "name": "mordicus2",
-    "url": "https://www.github.com/bouc1620/mordicus2",
-    "webpage": "https://bouc1620.itch.io/mordicus",
+    "url": "https://github.com/bouc1620/mordicus2",
     "stars": 1,
     "description": {
       "fr": "Une reproduction du jeu Mordicus des années 1990 sur Vidéoway. Développé en TypeScript avec RxJS, il gère de manière réactive les entrées utilisateur et les animations, prend en charge la manette et le clavier, et produit une application de bureau avec Electron.",
       "en": "A modern remake of the 1990s Vidéoway game Mordicus. Built in TypeScript with RxJS, it handles user inputs and screen animations reactively, supports gamepad and keyboard, and packages the game as a desktop app with Electron."
     },
-    "keywords": ["RxJS", "TypeScript", "Vite", "Electron"],
-    "languages": ["TypeScript"]
+    "keywords": [
+      "RxJS",
+      "TypeScript",
+      "Vite",
+      "Electron"
+    ],
+    "languages": [
+      "TypeScript"
+    ]
   },
   {
     "name": "boss-rush-nes",
-    "url": "https://www.github.com/bouc1620/boss-rush-nes",
+    "url": "https://github.com/bouc1620/boss-rush-nes",
     "stars": 0,
     "description": {
       "fr": "Un émulateur NES basique écrit en Rust, créé surtout pour apprendre le langage et comprendre le fonctionnement d’une NES.",
@@ -37,22 +49,31 @@
       "bitwise operations",
       "APU audio"
     ],
-    "languages": ["Rust"]
+    "languages": [
+      "Rust"
+    ]
   },
   {
     "name": "faq-section-web-components",
-    "url": "https://www.github.com/bouc1620/faq-section-web-components",
+    "url": "https://github.com/bouc1620/faq-section-web-components",
     "stars": 0,
     "description": {
       "fr": "Une section FAQ simple et accessible, avec animations en accordéon et navigation clavier, construite en Web Components.",
       "en": "A clean FAQ section built with Web Components, featuring accordion animations, keyboard navigation, and accessibility-focused UX."
     },
-    "keywords": ["Web Components", "CSS", "Shadow DOM"],
-    "languages": ["JavaScript", "HTML"]
+    "keywords": [
+      "Web Components",
+      "CSS",
+      "Shadow DOM"
+    ],
+    "languages": [
+      "JavaScript",
+      "HTML"
+    ]
   },
   {
     "name": "css-dojo",
-    "url": "https://www.github.com/bouc1620/css-dojo",
+    "url": "https://github.com/bouc1620/css-dojo",
     "stars": 0,
     "description": {
       "fr": "Des mini-projets CSS pour expérimenter et progresser dans le langage.",
@@ -65,6 +86,10 @@
       "@property rule",
       "svg filters"
     ],
-    "languages": ["CSS", "SCSS", "JavaScript"]
+    "languages": [
+      "CSS",
+      "SCSS",
+      "JavaScript"
+    ]
   }
 ]
