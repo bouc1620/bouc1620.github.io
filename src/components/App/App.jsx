@@ -2,6 +2,7 @@ import Header from '../Header/Header.jsx';
 import Hero from '../Hero/Hero.jsx';
 import LanguageProvider from '../LanguageProvider/LanguageProvider.jsx';
 import Projects from '../Projects/Projects.jsx';
+import BackToTop from '../BackToTop/BackToTop.jsx';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Header />
       <Hero />
       <Projects />
+			<BackToTop />
     </LanguageProvider>
   );
 };
