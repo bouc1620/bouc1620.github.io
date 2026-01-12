@@ -11,8 +11,7 @@
     "keywords": {
       "fr": ["RxJS", "Gamepad API", "TypeScript", "package npm"],
       "en": ["RxJS", "Gamepad API", "TypeScript", "npm package"]
-    },
-    "languages": ["TypeScript"]
+    }
   },
   {
     "name": "mordicus2",
@@ -26,8 +25,7 @@
     "keywords": {
       "fr": ["RxJS", "TypeScript", "Vite", "Electron"],
       "en": ["RxJS", "TypeScript", "Vite", "Electron"]
-    },
-    "languages": ["TypeScript"]
+    }
   },
   {
     "name": "boss-rush-nes",
@@ -45,8 +43,7 @@
         "Audio APU"
       ],
       "en": ["emulator", "6502 Assembly", "bitwise operations", "APU audio"]
-    },
-    "languages": ["Rust"]
+    }
   },
   {
     "name": "faq-section-web-components",
@@ -59,8 +56,7 @@
     "keywords": {
       "fr": ["Web Components", "CSS", "Shadow DOM"],
       "en": ["Web Components", "CSS", "Shadow DOM"]
-    },
-    "languages": ["JavaScript", "HTML"]
+    }
   },
   {
     "name": "css-dojo",
@@ -73,7 +69,6 @@
     "keywords": {
       "fr": ["SCSS", "pnpm", "CSS Houdini", "règle @property", "filtres SVG"],
       "en": ["SCSS", "pnpm", "CSS Houdini", "@property rule", "SVG filters"]
-    },
-    "languages": ["CSS", "SCSS", "JavaScript"]
+    }
   }
 ]

@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: '0 0 * * 0'
 
+permissions:
+  contents: write
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -52,15 +55,19 @@ jobs:
 
             const pinnedRepos = result.user.pinnedItems.edges
               .map(e => e.node)
-              .filter(repo => repo.repositoryTopics.nodes.some(t => t.topic.name === "portfolio"));
+              .filter(repo =>
+                repo.repositoryTopics.nodes.some(t => t.topic.name === "portfolio")
+              );
 
-            const otherPortfolioRepos = (await github.paginate(
-              github.rest.repos.listForUser,
-              { username: 'bouc1620', per_page: 100 }
-            )).filter((repo) => {
-              return !pinnedRepos.some((pinned) => pinned.name === repo.name) &&
-                repo.topics.includes('portfolio');
-            });
+            const otherPortfolioRepos = (
+              await github.paginate(
+                github.rest.repos.listForUser,
+                { username: "bouc1620", per_page: 100 }
+              )
+            ).filter(repo =>
+              !pinnedRepos.some(pinned => pinned.name === repo.name) &&
+              repo.topics.includes("portfolio")
+            );
 
             const getRepoMetadata = async (repo) => {
               try {
@@ -69,7 +76,11 @@ jobs:
                   repo: repo.name,
                   path: "portfolio.i18n.json"
                 });
-                const content = Buffer.from(file.data.content, "base64").toString("utf8");
+
+                const content = Buffer
+                  .from(file.data.content, "base64")
+                  .toString("utf8");
+
                 return JSON.parse(content);
               } catch {
                 return {
@@ -90,4 +101,13 @@ jobs:
               });
             }
 
-            fs.writeFileSync("src/i18n/projects.json", JSON.stringify(projects, null, 2));
+            fs.writeFileSync(
+              "src/i18n/projects.json",
+              JSON.stringify(projects, null, 2)
+            );
+
+      - name: Commit projects.json
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Update projects.json'
+          file_pattern: src/i18n/projects.json
