@@ -5,13 +5,26 @@
     "stars": 1,
     "webpage": "https://www.npmjs.com/package/gamepad-rxjs",
     "description": {
-      "fr": "Ce package encapsule le Gamepad API et expose toutes les entrées comme des Observables RxJS. Il convient aux configurations multi-joueurs, permettant de gérer de manière réactive les changements d'état et de répondre aux entrées discrètes et continues.",
+      "fr": "Un wrapper autour du Gamepad API qui expose les événements des boutons et des joysticks comme des Observables RxJS. Il convient aux configurations multi-joueurs, permettant de gérer de manière réactive les entrées discrètes et continues.",
       "en": "This package wraps the Gamepad API and exposes all inputs as RxJS Observables. It is suitable for multi-player setups, allowing developers to reactively handle changes in state and respond to both discrete and continuous inputs."
     },
     "keywords": {
-      "fr": ["RxJS", "Gamepad API", "TypeScript", "package npm"],
-      "en": ["RxJS", "Gamepad API", "TypeScript", "npm package"]
-    }
+      "fr": [
+        "RxJS",
+        "Gamepad API",
+        "TypeScript",
+        "package npm"
+      ],
+      "en": [
+        "RxJS",
+        "Gamepad API",
+        "TypeScript",
+        "npm package"
+      ]
+    },
+    "languages": [
+      "TypeScript"
+    ]
   },
   {
     "name": "mordicus2",
@@ -19,20 +32,33 @@
     "stars": 1,
     "webpage": "https://bouc1620.itch.io/mordicus",
     "description": {
-      "fr": "Une reproduction du jeu Mordicus des années 1990 sur Vidéoway. Développé en TypeScript avec RxJS, il gère de manière réactive les entrées utilisateur et les animations, prend en charge la manette et le clavier, et produit une application de bureau avec Electron.",
+      "fr": "Une reproduction du jeu Mordicus paru au courant des années 1990 sur Vidéoway. Développé en TypeScript avec RxJS, il gère de manière réactive les animations et les entrées utilisateur autant au clavier que sur une manette de jeu. Le projet produit une application de bureau avec Electron.",
       "en": "A modern remake of the 1990s Vidéoway game Mordicus. Built in TypeScript with RxJS, it handles user inputs and screen animations reactively, supports gamepad and keyboard, and packages the game as a desktop app with Electron."
     },
     "keywords": {
-      "fr": ["RxJS", "TypeScript", "Vite", "Electron"],
-      "en": ["RxJS", "TypeScript", "Vite", "Electron"]
-    }
+      "fr": [
+        "RxJS",
+        "TypeScript",
+        "Vite",
+        "Electron"
+      ],
+      "en": [
+        "RxJS",
+        "TypeScript",
+        "Vite",
+        "Electron"
+      ]
+    },
+    "languages": [
+      "TypeScript"
+    ]
   },
   {
     "name": "boss-rush-nes",
     "url": "https://github.com/bouc1620/boss-rush-nes",
     "stars": 0,
     "description": {
-      "fr": "Un émulateur NES basique écrit en Rust, créé surtout pour apprendre le langage et comprendre le fonctionnement d'une NES.",
+      "fr": "Un émulateur NES basique écrit en Rust, créé surtout pour apprendre le langage et comprendre le fonctionnement d’une NES.",
       "en": "A basic NES emulator written in Rust. The project was primarily created to explore Rust programming, while also providing a simple, hands-on example of how classic NES hardware can be emulated in software."
     },
     "keywords": {
@@ -42,8 +68,16 @@
         "opérations binaires",
         "Audio APU"
       ],
-      "en": ["emulator", "6502 Assembly", "bitwise operations", "APU audio"]
-    }
+      "en": [
+        "emulator",
+        "6502 Assembly",
+        "bitwise operations",
+        "APU audio"
+      ]
+    },
+    "languages": [
+      "Rust"
+    ]
   },
   {
     "name": "faq-section-web-components",
@@ -54,9 +88,21 @@
       "en": "A clean FAQ section built with Web Components, featuring accordion animations, keyboard navigation, and accessibility-focused UX."
     },
     "keywords": {
-      "fr": ["Web Components", "CSS", "Shadow DOM"],
-      "en": ["Web Components", "CSS", "Shadow DOM"]
-    }
+      "fr": [
+        "Web Components",
+        "CSS",
+        "Shadow DOM"
+      ],
+      "en": [
+        "Web Components",
+        "CSS",
+        "Shadow DOM"
+      ]
+    },
+    "languages": [
+      "JavaScript",
+      "HTML"
+    ]
   },
   {
     "name": "css-dojo",
@@ -67,8 +113,53 @@
       "en": "A training ground for my CSS skills. Small challenges I set myself to try cool tricks and learn."
     },
     "keywords": {
-      "fr": ["SCSS", "pnpm", "CSS Houdini", "règle @property", "filtres SVG"],
-      "en": ["SCSS", "pnpm", "CSS Houdini", "@property rule", "SVG filters"]
+      "fr": [
+        "SCSS",
+        "pnpm",
+        "CSS Houdini",
+        "règle @property",
+        "filtres SVG"
+      ],
+      "en": [
+        "SCSS",
+        "pnpm",
+        "CSS Houdini",
+        "@property rule",
+        "SVG filters"
+      ]
+    },
+    "languages": [
+      "CSS",
+      "SCSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "name": "IFT611",
+    "url": "https://api.github.com/repos/bouc1620/IFT611",
+    "description": {
+      "fr": "Éditeur de texte collaboratif en temps réel réalisé dans un cadre académique, utilisant WebRTC (PeerJS) et WebAssembly pour la cohérence du document, écrit en C++ et compilé avec Emscripten.",
+      "en": "Real-time collaborative text editor built as an academic project, using WebRTC (PeerJS) and WebAssembly for document consistency, written in C++ and compiled with Emscripten."
+    },
+    "keywords": {
+      "fr": [
+        "C++",
+        "JavaScript",
+        "Pug",
+        "Emscripten",
+        "Wasm",
+        "WebRTC",
+        "Pair-à-pair"
+      ],
+      "en": [
+        "C++",
+        "JavaScript",
+        "Pug",
+        "Emscripten",
+        "Wasm",
+        "WebRTC",
+        "Peer-to-peer"
+      ]
     }
   }
 ]
