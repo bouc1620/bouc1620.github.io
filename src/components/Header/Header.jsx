@@ -12,6 +12,7 @@ const Header = () => {
         <button
           class={`${styles['choice-left']} ${styles.choice}`}
           classList={{ [styles.active]: locale() === 'en' }}
+          tabIndex={locale() != 'en' ? 0 : -1}
           onClick={() => setLanguage('en')}
         >
           En
@@ -19,6 +20,7 @@ const Header = () => {
         <button
           class={`${styles['choice-right']} ${styles.choice}`}
           classList={{ [styles.active]: locale() === 'fr' }}
+          tabIndex={locale() != 'fr' ? 0 : -1}
           onClick={() => setLanguage('fr')}
         >
           Fr
