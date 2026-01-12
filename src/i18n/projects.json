@@ -21,10 +21,7 @@
         "TypeScript",
         "npm package"
       ]
-    },
-    "languages": [
-      "TypeScript"
-    ]
+    }
   },
   {
     "name": "mordicus2",
@@ -48,10 +45,7 @@
         "Vite",
         "Electron"
       ]
-    },
-    "languages": [
-      "TypeScript"
-    ]
+    }
   },
   {
     "name": "boss-rush-nes",
@@ -63,21 +57,18 @@
     },
     "keywords": {
       "fr": [
-        "émulateur",
+        "émulateur NES",
         "langage assembleur 6502",
         "opérations binaires",
-        "Audio APU"
+        "audio APU"
       ],
       "en": [
-        "emulator",
+        "NES emulator",
         "6502 Assembly",
         "bitwise operations",
         "APU audio"
       ]
-    },
-    "languages": [
-      "Rust"
-    ]
+    }
   },
   {
     "name": "faq-section-web-components",
@@ -91,18 +82,16 @@
       "fr": [
         "Web Components",
         "CSS",
-        "Shadow DOM"
+        "Shadow DOM",
+        "A11y"
       ],
       "en": [
         "Web Components",
         "CSS",
-        "Shadow DOM"
+        "Shadow DOM",
+        "A11y"
       ]
-    },
-    "languages": [
-      "JavaScript",
-      "HTML"
-    ]
+    }
   },
   {
     "name": "css-dojo",
@@ -127,12 +116,7 @@
         "@property rule",
         "SVG filters"
       ]
-    },
-    "languages": [
-      "CSS",
-      "SCSS",
-      "JavaScript"
-    ]
+    }
   },
   {
     "name": "IFT611",
