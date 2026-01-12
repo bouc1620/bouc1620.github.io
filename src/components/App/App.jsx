@@ -10,9 +10,10 @@ const App = () => {
       <Header />
       <Hero />
       <Projects />
-			<BackToTop />
+      <BackToTop />
     </LanguageProvider>
   );
 };
 
 export default App;
+
