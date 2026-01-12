@@ -10,15 +10,15 @@
     },
     "keywords": {
       "fr": [
+        "TypeScript",
         "RxJS",
         "Gamepad API",
-        "TypeScript",
         "package npm"
       ],
       "en": [
+        "TypeScript",
         "RxJS",
         "Gamepad API",
-        "TypeScript",
         "npm package"
       ]
     }
@@ -34,14 +34,14 @@
     },
     "keywords": {
       "fr": [
-        "RxJS",
         "TypeScript",
+        "RxJS",
         "Vite",
         "Electron"
       ],
       "en": [
-        "RxJS",
         "TypeScript",
+        "RxJS",
         "Vite",
         "Electron"
       ]
@@ -57,12 +57,14 @@
     },
     "keywords": {
       "fr": [
+        "Rust",
         "émulateur NES",
         "langage assembleur 6502",
         "opérations binaires",
         "audio APU"
       ],
       "en": [
+        "Rust",
         "NES emulator",
         "6502 Assembly",
         "bitwise operations",
@@ -80,14 +82,14 @@
     },
     "keywords": {
       "fr": [
+        "JavaScript",
         "Web Components",
-        "CSS",
         "Shadow DOM",
         "A11y"
       ],
       "en": [
+        "JavaScript",
         "Web Components",
-        "CSS",
         "Shadow DOM",
         "A11y"
       ]
