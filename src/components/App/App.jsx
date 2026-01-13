@@ -6,7 +6,7 @@ import BackToTop from '../BackToTop/BackToTop.jsx';
 
 const App = () => {
   return (
-    <LanguageProvider client:load>
+    <LanguageProvider defaultLocale="en">
       <Header />
       <Hero />
       <Projects />
@@ -16,4 +16,3 @@ const App = () => {
 };
 
 export default App;
-

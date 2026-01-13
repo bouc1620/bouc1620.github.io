@@ -1,12 +1,9 @@
 ---
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
-import LanguageProvider from '../components/LanguageProvider/LanguageProvider.jsx';
 import App from '../components/App/App.jsx';
 ---
 
 <Layout>
-  <LanguageProvider defaultLocale="en">
-    <App client:load />
-  </LanguageProvider>
+  <App client:load />
 </Layout>
