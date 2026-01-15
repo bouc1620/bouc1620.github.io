@@ -6,8 +6,8 @@ const Sentinel = () => {
   onMount(() => {
     const observer = new IntersectionObserver(([entry]) => {
       document.body.toggleAttribute(
-        'data-scrolled-at-top',
-        entry.isIntersecting,
+        'data-not-scrolled-at-top',
+        !entry.isIntersecting,
       );
     });
 
