@@ -3,7 +3,7 @@ import styles from './BackToTop.module.css';
 const BackToTop = () => {
   return (
     <button
-      class={`${styles.button} ${styles['back-to-top']}`}
+      class={`${styles['back-to-top']}`}
       onClick={() =>
         window.scroll({
           top: 0,
